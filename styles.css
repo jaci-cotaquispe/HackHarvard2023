@@ -123,3 +123,14 @@ body {
     transition: none;
     animation: slideIn 0.5s ease forwards;
 }
+
+@keyframes slideIn {
+    0% {transform: translateY(-100%)}
+    100% {transform: translateY(0)}
+}
+
+.container { padding-inline: 15px;}
+
+.header .container {
+    
+}
