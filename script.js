@@ -1,6 +1,6 @@
 /**
  * This function opens a new page
  */
-function openPage(pageName){
-    window.location.href = pageName;
+function openPage(){
+    window.location.href = "bookshelf.html";
 }
