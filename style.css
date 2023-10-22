@@ -145,7 +145,6 @@
 
 .div3 {
   background-color: #477952;
-  position: relative;
 }
 
 .navbar {
@@ -192,7 +191,7 @@
   height: 114px;
   top: 718px;
   left: 0;
-  background-image: url(./img/rectangle-9.svg);
+  background-color:#c2a878;
   background-size: 100% 100%;
 }
 
@@ -292,4 +291,14 @@
   background-color: #c2a878;
   border: 1px solid;
   border-color: #355834;
+}
+
+.book-button {
+  position: absolute;
+  background-color: #c2a878;
+  width: 88px;
+  height: 88px;
+  top: 13px;
+  left: 32px;
+  object-fit: cover;
 }
