@@ -88,20 +88,16 @@
   padding: 0 4px;
 }
 
-.rectangle-book {
-  top: 166px;
-  left: 90px;
-  /**position: absolute;**/
+.div2 img {
   margin-top: 8px;
   vertical-align: middle;
   width: 307px;
   height: 279px;
 }
 
-.rectangle-book-1 {
+/* .rectangle-book-1 {
   top: 501px;
   left: 90px;
-  /**position: absolute;**/
   width: 307px;
   height: 279px;
   margin-top: 8px;
@@ -111,7 +107,6 @@
 .rectangle-2 {
   top: 166px;
   left: 486px;
-  /**position: absolute;**/
   width: 307px;
   height: 279px;
   margin-top: 8px;
@@ -121,7 +116,6 @@
 .rectangle-3 {
   top: 501px;
   left: 486px;
-  /**position: absolute;**/
   width: 307px;
   height: 279px;
   margin-top: 8px;
@@ -131,7 +125,6 @@
 .rectangle-4 {
   top: 166px;
   left: 882px;
-  /**position: absolute;**/
   width: 307px;
   height: 279px;
   margin-top: 8px;
@@ -141,12 +134,12 @@
 .rectangle-5 {
   top: 501px;
   left: 882px;
-  /**position: absolute;**/
   width: 307px;
   height: 279px;
   margin-top: 8px;
   vertical-align: middle;
-}
+}  */
+
 .topbar {
   position: absolute;
   width: 100%;
