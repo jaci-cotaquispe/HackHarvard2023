@@ -294,11 +294,19 @@
 }
 
 .book-button {
-  position: absolute;
   background-color: #c2a878;
-  width: 88px;
-  height: 88px;
-  top: 13px;
-  left: 32px;
   object-fit: cover;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  width: 307px;
+  height: 279px;
+}
+
+.rectangle-book {
+  margin-bottom: 20px;
+  vertical-align: middle;
+  width: 307px;
+  height: 279px;
 }
