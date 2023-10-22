@@ -1,17 +1,8 @@
 import React from "react";
-import "./styles.css";
+import ReactDOMClient from "react-dom/client";
+import { MacbookAir } from "./screens/MacbookAir";
 
-export const MacbookAir = () => {
-  return (
-    <div className="macbook-air">
-      <div className="div">
-        <div className="overlap-group">
-          <div className="rectangle" />
-          <div className="text-wrapper">Start Your Journey</div>
-        </div>
-        <img className="orpheustrans" alt="Orpheustrans" src="orpheustrans-1.png" />
-        <div className="text-wrapper-2">Orpheus</div>
-      </div>
-    </div>
-  );
-};
+const app = document.getElementById("app");
+const root = ReactDOMClient.createRoot(app);
+root.render(<MacbookAir />);
+

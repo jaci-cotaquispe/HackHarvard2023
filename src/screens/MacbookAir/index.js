@@ -1,1 +1,1 @@
-export { loadingPage } from "../../../../../../Downloads/anima-project/src/screens/loadingPage/loadingPage";
+export { MacbookAir } from "./MacbookAir";
