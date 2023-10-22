@@ -5,7 +5,7 @@
   "source": "./index.html",
   "scripts": {
     "build": "parcel build --public-url ./ --no-scope-hoist",
-    "dev": "parcel",
+    "dev": "npm run development",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
