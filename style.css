@@ -104,11 +104,18 @@
 
 .orpheustrans2 {
   position: absolute;
+  background-color: #c2a878;
   width: 88px;
   height: 88px;
   top: 13px;
   left: 32px;
   object-fit: cover;
+}
+.orpheustrans3 {
+  position: absolute;
+  background-color: #c2a878;
+  top: -2px;
+  left: -2px;
 }
 
 .text-wrapper-bookshelf {
