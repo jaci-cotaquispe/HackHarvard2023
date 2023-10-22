@@ -33,12 +33,8 @@ def get_energy_positivity_score(text):
     '''   
     #sentiment analysis to get compound score
     analyzer = SentimentIntensityAnalyzer()
-    score = analyzer.polarity_scores(text)
-    compound_score = score['compound']
-    
-    #since compound score is betweeen -1 and 1, normalising to
-    #get a score between 0 and 1.
-    final_score = (compound_score - (-1))/(1-(-1))
-    
+    score = analyzer.polarity_scores(text) 
 
-    return final_score
+    
+    final_score = (score['pos'] - score['neg'])
+    return final_score*10
