@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.loading-page .div {
+.div {
   background-color: #477952;
   height: 832px;
   position: relative;
   width: 1280px;
 }
 
-.loading-page .overlap-group {
+.overlap-group {
   border-radius: 10px;
   height: 70px;
   left: 408px;
@@ -22,7 +22,7 @@
   width: 464px;
 }
 
-.loading-page .rectangle {
+.rectangle {
   background-color: #c2a878;
   border: 1px solid;
   border-color: #355834;
@@ -35,7 +35,7 @@
   width: 464px;
 }
 
-.loading-page .text-wrapper {
+.text-wrapper {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 25px;
@@ -57,7 +57,7 @@
   width: 182px;
 }
 
-.loading-page .text-wrapper-2 {
+.text-wrapper-2 {
   color: #c2a878;
   font-family: "Inter", Helvetica;
   font-size: 50px;
