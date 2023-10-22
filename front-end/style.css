@@ -1,4 +1,4 @@
-.macbook-air {
+.loading-page {
   background-color: #477952;
   display: flex;
   flex-direction: row;
@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.macbook-air .div {
+.loading-page .div {
   background-color: #477952;
   height: 832px;
   position: relative;
   width: 1280px;
 }
 
-.macbook-air .overlap-group {
+.loading-page .overlap-group {
   border-radius: 10px;
   height: 70px;
   left: 408px;
@@ -22,7 +22,7 @@
   width: 464px;
 }
 
-.macbook-air .rectangle {
+.loading-page .rectangle {
   background-color: #c2a878;
   border: 1px solid;
   border-color: #355834;
@@ -35,7 +35,7 @@
   width: 464px;
 }
 
-.macbook-air .text-wrapper {
+.loading-page .text-wrapper {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 25px;
@@ -48,7 +48,7 @@
   width: 231px;
 }
 
-.macbook-air .orpheustrans {
+.loading-page .orpheustrans {
   height: 187px;
   left: 549px;
   object-fit: cover;
@@ -57,7 +57,7 @@
   width: 182px;
 }
 
-.macbook-air .text-wrapper-2 {
+.loading-page .text-wrapper-2 {
   color: #c2a878;
   font-family: "Inter", Helvetica;
   font-size: 50px;
