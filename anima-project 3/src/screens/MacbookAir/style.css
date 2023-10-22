@@ -1,0 +1,72 @@
+.macbook-air {
+  background-color: #477952;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.macbook-air .div {
+  background-color: #477952;
+  height: 832px;
+  position: relative;
+  width: 1280px;
+}
+
+.macbook-air .overlap-group {
+  border-radius: 10px;
+  height: 70px;
+  left: 408px;
+  position: absolute;
+  top: 447px;
+  width: 464px;
+}
+
+.macbook-air .rectangle {
+  background-color: #c2a878;
+  border: 1px solid;
+  border-color: #355834;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 464px;
+}
+
+.macbook-air .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  left: 116px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 18px;
+  width: 231px;
+}
+
+.macbook-air .orpheustrans {
+  height: 187px;
+  left: 549px;
+  object-fit: cover;
+  position: absolute;
+  top: 229px;
+  width: 182px;
+}
+
+.macbook-air .text-wrapper-2 {
+  color: #c2a878;
+  font-family: "Inter", Helvetica;
+  font-size: 50px;
+  font-weight: 400;
+  left: 527px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 147px;
+  white-space: nowrap;
+  width: 226px;
+}
