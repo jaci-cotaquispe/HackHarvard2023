@@ -1,37 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!---- @authors   Jaci Cotaquispe, Echo He @version  10/17/2023 ----->
+
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
-    <meta name=author content="Jaci Cotaquispe, Miraya Gupta, Jenna Stephenson">
-    <title>Orpheus</title>
-  </head>
-  <body>
-    <main>
-      <h1>Zodiac Page</h1>
-  
-      <section class="zodiac-section">
-          <figure class="zodiac-figure">
-              <img id="zodiac-image" src="imgs/virgo.png" alt="Virgo Sign">
-              <figcaption class="zodiac-img-text">I think horoscopes are as useless as divination, but if you are born today and today is <span id="current_date" aria-live="polite">Monday, 09/10/2002</span>, then you are a <output id="zodiac_sign" aria-live="polite">virgo</output></figcaption>
-              <button id="change_zodiac" type="button">Change Zodiac</button>
-            </figure>
-      </section>
-  
-  
-  </main>
-  
-    <div class="loading-page">
-      <div class="div">
-        <div class="overlap-group">
-          <div class="rectangle"></div>
-          <div class="text-wrapper">Start Your Journey</div>
-        </div>
-        <img class="orpheustrans" src="img/orpheustrans.png" />
-        <div class="text-wrapper-2">Orpheus</div>
-      </div>
-    </div>
-  </body>
+    <meta name=author content="Jaci Cotaquispe, Echo He">
+    <title>Zodiac</title>
+</head>
+<body>
+
+<main>
+    <h1>Zodiac Page</h1>
+
+    <section class="zodiac-section">
+        <figure class="zodiac-figure">
+            <img id="zodiac-image" src="imgs/virgo.png" alt="Virgo Sign">
+            <figcaption class="zodiac-img-text">I think horoscopes are as useless as divination, but if you are born today and today is <span id="current_date" aria-live="polite">Monday, 09/10/2002</span>, then you are a <output id="zodiac_sign" aria-live="polite">virgo</output></figcaption>
+            <button id="change_zodiac" type="button">Change Zodiac</button>
+          </figure>
+    </section>
+
+
+</main>
+
+<!-- JavaScript at the bottom -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cs.wellesley.edu/~anderson/js/bounds/bounds-plugin.js"></script>
+<script src = "zodiac.js"></script>
+
+</body>
 </html>
