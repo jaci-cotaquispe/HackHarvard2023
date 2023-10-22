@@ -73,72 +73,24 @@
 
 .bookshelf-page {
   background-color: #477952;
-  /**width: 100%;*/
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-top: 122px;
 }
 
 .div2 {
   background-color: #477952;
-  /**height: 832px;**/
-  /**position: relative;**/
-  /**width: 1280px;**/
   flex: 50%;
   padding: 0 4px;
 }
 
 .div2 img {
-  margin-top: 8px;
+  margin-top: 160px;
   vertical-align: middle;
   width: 307px;
   height: 279px;
 }
-
-/* .rectangle-book-1 {
-  top: 501px;
-  left: 90px;
-  width: 307px;
-  height: 279px;
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.rectangle-2 {
-  top: 166px;
-  left: 486px;
-  width: 307px;
-  height: 279px;
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.rectangle-3 {
-  top: 501px;
-  left: 486px;
-  width: 307px;
-  height: 279px;
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.rectangle-4 {
-  top: 166px;
-  left: 882px;
-  width: 307px;
-  height: 279px;
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.rectangle-5 {
-  top: 501px;
-  left: 882px;
-  width: 307px;
-  height: 279px;
-  margin-top: 8px;
-  vertical-align: middle;
-}  */
 
 .topbar {
   position: absolute;
