@@ -1,136 +1,73 @@
-/*
-* @author   Jaci Cotaquispe, Miraya Gupta, Jenna Stephenson 
-* @version  10/21/2023
-*/
-
-:root { 
-
-    --section-padding: 80px;
-
-    --shadow-1: 4px 6px 10px hsla(231, 94%, 7%, 0.06);
-    --shadow-2: 2px 0 15px 5px hsla(231, 94%, 7%, 0.06);
-    --shadow-3: 3px 3px var(--chinese-violet);
-    --shadow-4: 5px 5px var(--chinese-violet);
-
-    --radius-5: 5px;
-    --radius-10: 10px;
-
-
-    --polygon: polygon(100% 29%,100% 100%,19% 99%,0 56%);
-
-    --transition-1: 0.25s ease;
-    --transition-2: 0.5s ease;
-    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
-}
-
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-li {
-    list-style: none;
-}
-
-a, img, span, data, input, button, textarea, ion-icon {
-    display: block;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    height: auto;
-}
-
-input, button, textarea {
-    background: none;
-    border: none;
-    font: inherit;
-}
-
-input, textarea {
+.macbook-air {
+    background-color: #477952;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-}
-
-button {
-    cursor: pointer;
-}
-
-address {
-    font-style: normal;
-}
-
-ion-icon{ pointer-events: none;}
-
-html {
-    font-family:'Times New Roman';
-    font-size: 10px;
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: bisque;
-    color: black;
-    line-height: 1.8;
-    font-size: 1.6rem;
-}
-
-:focus-visible {outline-offset: 4px;}
-
-::selection {
-    background-color: red;
-    color:blue;
-}
-
-::-webkit-scrollbar { width: 10px; }
-
-::-webkit-scrollbar-track { background-color: antiquewhite;}
-
-::-webkit-scrollbar-thumb { background-color: antiquewhite;}
-
-::-webkit-scrollbar-thunb:hover { background-color: antiquewhite;}
-
-/*
-* NAVBAR
-*/
-
-.navbar { display: none;}
-
-.header {
-    background-color: antiquewhite;
+  }
+  
+  .macbook-air .div {
+    background-color: #477952;
+    height: 832px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .macbook-air .overlap-group {
+    border-radius: 10px;
+    height: 70px;
+    left: 408px;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    left: 10px;
-    padding-block: 12px;
-    z-index: 4;
-    transition: var(--transition-2);
-}
-
-.header.active {
-    position: fixed;
-    top: 0;
-    right: 0;
+    top: 447px;
+    width: 464px;
+  }
+  
+  .macbook-air .rectangle {
+    background-color: #c2a878;
+    border: 1px solid;
+    border-color: #355834;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 70px;
     left: 0;
-    filter: drop-shadow(var(--shadow-1));
-    transform: translateY(-100%);
-    transition: none;
-    animation: slideIn 0.5s ease forwards;
-}
-
-@keyframes slideIn {
-    0% {transform: translateY(-100%)}
-    100% {transform: translateY(0)}
-}
-
-.container { padding-inline: 15px;}
-
-.header .container {
-    
-}
+    position: absolute;
+    top: 0;
+    width: 464px;
+  }
+  
+  .macbook-air .text-wrapper {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 116px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 18px;
+    width: 231px;
+  }
+  
+  .macbook-air .orpheustrans {
+    height: 187px;
+    left: 549px;
+    object-fit: cover;
+    position: absolute;
+    top: 229px;
+    width: 182px;
+  }
+  
+  .macbook-air .text-wrapper-2 {
+    color: #c2a878;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    left: 527px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 147px;
+    white-space: nowrap;
+    width: 226px;
+  }
+  
