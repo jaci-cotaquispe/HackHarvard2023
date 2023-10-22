@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.loading-page .div {
+.div {
   background-color: #477952;
   height: 832px;
   position: relative;
   width: 1280px;
 }
 
-.loading-page .overlap-group {
+.overlap-group {
   border-radius: 10px;
   height: 70px;
   left: 408px;
@@ -22,7 +22,7 @@
   width: 464px;
 }
 
-.loading-page .rectangle {
+.rectangle {
   background-color: #c2a878;
   border: 1px solid;
   border-color: #355834;
@@ -35,7 +35,7 @@
   width: 464px;
 }
 
-.loading-page .text-wrapper {
+.text-wrapper {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 25px;
@@ -48,7 +48,7 @@
   width: 231px;
 }
 
-.loading-page .orpheustrans {
+.orpheustrans {
   height: 187px;
   left: 549px;
   object-fit: cover;
@@ -57,7 +57,7 @@
   width: 182px;
 }
 
-.loading-page .text-wrapper-2 {
+.text-wrapper-2 {
   color: #c2a878;
   font-family: "Inter", Helvetica;
   font-size: 50px;
@@ -66,7 +66,110 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 147px;
+  top: 110px;
   white-space: nowrap;
   width: 226px;
 }
+
+.bookshelf-page {
+  background-color: #477952;
+  /**width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.div2 {
+  background-color: #477952;
+  /**height: 832px;**/
+  /**position: relative;**/
+  /**width: 1280px;**/
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.div2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 307px;
+  height: 279px;
+}
+
+/* .rectangle-book-1 {
+  top: 501px;
+  left: 90px;
+  width: 307px;
+  height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.rectangle-2 {
+  top: 166px;
+  left: 486px;
+  width: 307px;
+  height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.rectangle-3 {
+  top: 501px;
+  left: 486px;
+  width: 307px;
+  height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.rectangle-4 {
+  top: 166px;
+  left: 882px;
+  width: 307px;
+  height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.rectangle-5 {
+  top: 501px;
+  left: 882px;
+  width: 307px;
+  height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
+}  */
+
+.topbar {
+  position: absolute;
+  width: 100%;
+  height: 122px;
+  top: 0;
+  left: 0;
+  background-color: #c2a878;
+  background-size: 100% 100%;
+}
+
+.orpheustrans2 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  top: 13px;
+  left: 32px;
+  object-fit: cover;
+}
+
+.text-wrapper-bookshelf {
+  position: absolute;
+  width: 220px;
+  top: 33px;
+  left: 163px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
