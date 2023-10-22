@@ -73,63 +73,79 @@
 
 .bookshelf-page {
   background-color: #477952;
+  /**width: 100%;*/
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .div2 {
   background-color: #477952;
-  height: 832px;
-  position: relative;
-  width: 1280px;
+  /**height: 832px;**/
+  /**position: relative;**/
+  /**width: 1280px;**/
+  flex: 50%;
+  padding: 0 4px;
 }
 
 .rectangle-book {
   top: 166px;
   left: 90px;
-  position: absolute;
+  /**position: absolute;**/
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 307px;
+  height: 279px;
 }
 
 .rectangle-book-1 {
   top: 501px;
   left: 90px;
-  position: absolute;
+  /**position: absolute;**/
   width: 307px;
   height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .rectangle-2 {
   top: 166px;
   left: 486px;
-  position: absolute;
+  /**position: absolute;**/
   width: 307px;
   height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .rectangle-3 {
   top: 501px;
   left: 486px;
-  position: absolute;
+  /**position: absolute;**/
   width: 307px;
   height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .rectangle-4 {
   top: 166px;
   left: 882px;
-  position: absolute;
+  /**position: absolute;**/
   width: 307px;
   height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .rectangle-5 {
   top: 501px;
   left: 882px;
-  position: absolute;
+  /**position: absolute;**/
   width: 307px;
   height: 279px;
+  margin-top: 8px;
+  vertical-align: middle;
 }
 .overlap-group2 {
   position: absolute;
@@ -137,7 +153,7 @@
   height: 122px;
   top: 0;
   left: 0;
-  background-image: url(./img/book.png);
+  background-color: #c2a878;
   background-size: 100% 100%;
 }
 
