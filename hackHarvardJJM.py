@@ -26,11 +26,13 @@ def get_cleaned_book(book):
                        
         return cleaned_book
 
-def get_energy_positivity_score(text):
+def get_energy_positivity_score(book):
     '''
     takes text in as a string and returns the compound score
     for sentiment between 0 and 1
     '''   
+    text = get_cleaned_book(book)
+
     #sentiment analysis to get compound score
     analyzer = SentimentIntensityAnalyzer()
     score = analyzer.polarity_scores(text) 

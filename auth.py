@@ -1,9 +1,11 @@
 from datetime import datetime, timedelta
+import json
 import requests
 from flask import Flask, redirect, request, jsonify, session
 import os
 from dotenv import load_dotenv
 import urllib.parse
+from hackHarvardJJM import*
 
 app = Flask(__name__)
 app.secret_key = "random stuff?"
@@ -22,7 +24,7 @@ def index():
 
 @app.route('/login')
 def login():
-    scope = 'user-read-private user-read-email'
+    scope = 'user-read-private user-read-email playlist-modify-public playlist-modify-private'
 
     params = {
         'client_id': client_id,
@@ -58,29 +60,48 @@ def callback():
         session['refresh_token'] = token_info['refresh_token']
         session['expires_at'] = datetime.now().timestamp() + token_info['expires_in']
 
-        return redirect('/get_songs')
-    
-""" @app.route('/playlists')
-def get_playlists():
-    #check for missing token
-    if 'access_token' not in session:
-        return redirect('/login')
-    
-    #check for expiration
-    if datetime.now().timestamp() > session['expires_at']:
-        return redirect('/refresh-token')
-    
+        return redirect('/get-userID')
+
+@app.route('/get-userID')
+def get_userID():
+
     headers = {
         'Authorization': f"Bearer {session['access_token']}"        
     }
+    response = requests.get(api_base_url + "me", headers=headers)
 
-    response = requests.get(api_base_url + 'me/playlists', headers=headers)
-    playlists = response.json()
+    user = response.json()
+    session['userID'] = user['id']
 
-    return jsonify(playlists) """
+    return redirect('/make_playlist')
+
+@app.route('/make_playlist')
+def make_playlist(): 
+    headers = {
+        'Authorization': f"Bearer {session['access_token']}",
+        'Content-Type': 'application/json'       
+    }
+    testName = session['book']
+    req_body = {
+        "name": testName,
+        "description": f"The perfect soundtrack for reading {testName}, courtesy of Orpheus.",
+        "public": False
+    }
+
+    playlistURL = api_base_url + "users/" + session['userID'] + "/playlists"
+
+    response = requests.post(playlistURL, headers=headers, data=json.dumps(req_body))
+    playlist = response.json()
+    session['playlistID'] = playlist['id']
+
+    return redirect('/get_songs')
 
 @app.route('/get_songs')
-def get_songs(): #param = valence
+def get_songs(): 
+    
+    session['book'] = "romeo_and_juliet" #TEMP
+    miraya_values = get_energy_positivity_score(session['book'])
+
     #check for missing token
     if 'access_token' not in session:
         return redirect('/login')
@@ -92,26 +113,35 @@ def get_songs(): #param = valence
     headers = {
         'Authorization': f"Bearer {session['access_token']}"        
     }
-    
-    #TEMP
-    miraya_values = 0.7
    
     query = f"?limit=100&seed_genres=classical&target_valence={miraya_values}"
     query_url = api_base_url + 'recommendations' + query
 
     response = requests.get(query_url, headers=headers)
+    result = response.json()
+
+    tracklist = []
+    for track in result['tracks']:
+        tracklist.append(track['uri'])
+    session['songs'] = tracklist
     
-    session['songs'] = response['tracks']
+    return redirect('/add_songs')
 
-    return redirect('/make_playlist')
-
-@app.route('/make_playlist')
-def make_playlist(): #params = name of book
-    testName = "slayidk"
-    req_body = {
-        "name": testName,
-        "description": f"The perfect soundtrack for reading {testName}, courtesy of Orpheus."
+@app.route('/add_songs')
+def add_songs():
+    headers = {
+        'Authorization': f"Bearer {session['access_token']}",
+        'Content-Type': 'application/json'       
     }
+    req_body = {
+        "uris": session['songs'],
+        "position": 0
+    }
+    addURL = api_base_url + "playlists/" + session['playlistID'] + "/tracks"
+    response = requests.post(addURL, headers=headers, data=json.dumps(req_body))
+    result = response.json()
+
+    return jsonify(result)
 
 
 @app.route('/refresh-token')
