@@ -12,7 +12,7 @@ export const MacbookAir = () => {
         <img
           className="orpheustrans"
           alt="Orpheustrans"
-          src="https://c.animaapp.com/FjJktECU/img/orpheustrans-1@2x.png"
+          src="imgs/orpheusTrans.png"
         />
         <div className="text-wrapper-2">Orpheus</div>
       </div>
