@@ -294,14 +294,13 @@
 }
 
 .book-button {
-  background-color: #c2a878;
+  background-color:  #487952;
   object-fit: cover;
-
-  margin-top: 50px;
+  margin-top: -70px;
   margin-bottom: 20px;
   vertical-align: middle;
-  width: 307px;
-  height: 279px;
+  width: 30px;
+  height: 27px;
 }
 
 .rectangle-book {
